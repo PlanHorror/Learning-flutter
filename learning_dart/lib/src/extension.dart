@@ -6,7 +6,7 @@ void main() {
 
 extension ExtensionForString on String {
   bool lengthEven() {
-    return this.length % 2 == 0;
+    return length % 2 == 0;
   }
 
   String capitaliseFirstLetter() {
