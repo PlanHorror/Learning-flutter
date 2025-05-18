@@ -1,6 +1,8 @@
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
+import 'package:weather_app/forecast_widget.dart';
+import 'package:weather_app/weather_detail.dart';
 
 class WeatherScreen extends StatelessWidget {
   const WeatherScreen({super.key});
@@ -70,130 +72,22 @@ class WeatherScreen extends StatelessWidget {
             SingleChildScrollView(
               scrollDirection: Axis.horizontal,
               child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                spacing: 5,
                 children: [
-                  Card(
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(15),
-                    ),
-                    child: Padding(
-                      padding: const EdgeInsets.all(10.0),
-                      child: SizedBox(
-                        width: 100,
-                        height: 100,
-
-                        child: Column(
-                          children: [
-                            Text('Monday', style: TextStyle(fontSize: 18)),
-                            Icon(Icons.cloud, size: 50),
-                            Text('22°C'),
-                          ],
-                        ),
-                      ),
-                    ),
-                  ),
-                  Card(
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(15),
-                    ),
-                    child: Padding(
-                      padding: const EdgeInsets.all(10.0),
-                      child: SizedBox(
-                        width: 100,
-                        height: 100,
-                        child: Column(
-                          children: [
-                            Text('Tuesday', style: TextStyle(fontSize: 18)),
-                            Icon(Icons.cloud, size: 50),
-                            Text('24°C'),
-                          ],
-                        ),
-                      ),
-                    ),
-                  ),
-                  Card(
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(15),
-                    ),
-                    child: Padding(
-                      padding: const EdgeInsets.all(10.0),
-                      child: SizedBox(
-                        width: 100,
-                        height: 100,
-                        child: Column(
-                          children: [
-                            Text('Wednesday', style: TextStyle(fontSize: 18)),
-                            Icon(Icons.cloud, size: 50),
-                            Text('26°C'),
-                          ],
-                        ),
-                      ),
-                    ),
-                  ),
-                  Card(
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(15),
-                    ),
-                    child: Padding(
-                      padding: const EdgeInsets.all(10.0),
-                      child: SizedBox(
-                        width: 100,
-                        height: 100,
-                        child: Column(
-                          children: [
-                            Text('Thursday', style: TextStyle(fontSize: 18)),
-                            Icon(Icons.cloud, size: 50),
-                            Text('28°C'),
-                          ],
-                        ),
-                      ),
-                    ),
-                  ),
-                  Card(
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(15),
-                    ),
-                    child: Padding(
-                      padding: const EdgeInsets.all(10.0),
-                      child: SizedBox(
-                        width: 100,
-                        height: 100,
-                        child: Column(
-                          children: [
-                            Text('Friday', style: TextStyle(fontSize: 18)),
-                            Icon(Icons.cloud, size: 50),
-                            Text('30°C'),
-                          ],
-                        ),
-                      ),
-                    ),
-                  ),
-                  Card(
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(15),
-                    ),
-                    child: Padding(
-                      padding: const EdgeInsets.all(10.0),
-                      child: SizedBox(
-                        width: 100,
-                        height: 100,
-                        child: Column(
-                          children: [
-                            Text('Saturday', style: TextStyle(fontSize: 18)),
-                            Icon(Icons.cloud, size: 50),
-                            Text('32°C'),
-                          ],
-                        ),
-                      ),
-                    ),
-                  ),
+                  ForecastWidget(),
+                  ForecastWidget(),
+                  ForecastWidget(),
+                  ForecastWidget(),
                 ],
               ),
             ),
 
             SizedBox(height: 20),
-            Placeholder(fallbackHeight: 150),
+            Text(
+              'Weather Details',
+              style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+            ),
+            SizedBox(height: 20),
+            WeatherDetail(),
           ],
         ),
       ),
