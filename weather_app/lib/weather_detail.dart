@@ -1,35 +1,26 @@
 import 'package:flutter/material.dart';
 
 class WeatherDetail extends StatelessWidget {
-  const WeatherDetail({super.key});
+  final String label;
+  final IconData icon;
+  final String value;
+  const WeatherDetail({
+    super.key,
+    required this.label,
+    required this.icon,
+    required this.value,
+  });
 
   @override
   Widget build(BuildContext context) {
-    return Row(
-      mainAxisAlignment: MainAxisAlignment.spaceAround,
-
+    return Column(
       children: [
-        Column(
-          children: [
-            Icon(Icons.thermostat, size: 40),
-            Text('Temperature'),
-            Text('25°C'),
-          ],
-        ),
-        Column(
-          children: [
-            Icon(Icons.water_drop, size: 40),
-            Text('Humidity'),
-            Text('60%'),
-          ],
-        ),
-        Column(
-          children: [
-            Icon(Icons.air, size: 40),
-            Text('Wind Speed'),
-            Text('10 km/h'),
-          ],
-        ),
+        Icon(icon, size: 30),
+        const SizedBox(width: 10),
+        Text(label, style: const TextStyle(fontSize: 18)),
+
+        const SizedBox(height: 5),
+        Text(value, style: const TextStyle(fontSize: 24)),
       ],
     );
   }
