@@ -1,0 +1,79 @@
+[
+  {
+    "id": 1581130,
+    "name": "Ha Noi",
+    "country": "VN"
+  },
+  {
+    "id": 1848445,
+    "name": "Honmachi",
+    "country": "JP"
+  },
+  {
+    "id": 1850147,
+    "name": "Tokyo",
+    "country": "JP"
+  },
+  {
+    "id": 5128581,
+    "name": "New York City",
+    "state": "NY",
+    "country": "US"
+  },
+  {
+    "id": 2968815,
+    "name": "Paris",
+    "country": "FR"
+  },
+  {
+    "id": 2761369,
+    "name": "Vienna",
+    "country": "AT"
+  },
+  {
+    "id": 2800866,
+    "name": "Brussels",
+    "country": "BE"
+  },
+  {
+    "id": 5107152,
+    "name": "Amsterdam",
+    "state": "NY",
+    "country": "US"
+  },
+  {
+    "id": 1609350,
+    "name": "Bangkok",
+    "country": "TH"
+  },
+  {
+    "id": 1816670,
+    "name": "Beijing",
+    "country": "CN"
+  },
+  {
+    "id": 2950158,
+    "name": "Berlin",
+    "country": "DE"
+  },
+  {
+    "id": 360630,
+    "name": "Cairo",
+    "country": "EG"
+  },
+  {
+    "id": 2643743,
+    "name": "London",
+    "country": "GB"
+  },
+  {
+    "id": 3169070,
+    "name": "Rome",
+    "country": "IT"
+  },
+  {
+    "id": 1835848,
+    "name": "Seoul",
+    "country": "KR"
+  }
+]
